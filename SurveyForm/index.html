@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="surveystyles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+
+<body>
+<h1 id="title">Contact Me</h1>
+<p id="description">Welcome to my site please give me some feedback on what I could improve!</p>
+  <form action="contactform.php" id="survey-form" method="post">
+  <div class="intros"> 
+  <fieldset>
+    <label class="textquestion" id="name-label">Please enter your name here: </label><input name="name" class="form-control" placeholder="John Doe" type="text" id="name" required>
+    <label class="textquestion" id="email-label">Please enter your email here: </label><input name="mail" class="form-control"  placeholder="email@email.com" type="email" id="email" required>
+    <label class="textquestion" id="number-label">Subject</label><input name="subject" class="form-control"  placeholder="Subject" type="text">
+    <label class="textquestion">What best describes why your a vitst? </label><select name="vistorid" id="dropdown">
+      <option value="">(select one)</option>
+      <option value="Family">Kith and Kin</option>
+      <option value="Recuriting">Recuriting</option>
+      <option value="FoundPage">Just found the page</option>
+    </select>
+    <hr>
+    <label class="textquestion">How would you rate this site?</label>
+    <label class="textanswers"><input type="radio" class="inline" name="radio" value="1"> Great </label>
+    <label class="textanswers"><input type="radio" class="inline" name="radio" value="2"> Kinda Cool </label>
+    <label class="textanswers"><input type="radio" class="inline" name="radio" value="3"> Not that amazing</label>
+    <label class="textanswers"><input type="radio" class="inline" name="radio" value="4"> It sucks </label>
+    <hr>
+    <label class="textquestion">What should I work on next ?</label>
+    
+    <label class="textanswers"><input name="nextup[]" type="checkbox" class="inline" id="#survey-form" value="Front-End Projects"> Front-End Projects</label>
+    <label class="textanswers"><input name="nextup[]" type="checkbox" class="inline" id="#survey-form" value="Back-End Projects"> Back-End Projects</label>
+    <label class="textanswers"><input name="nextup[]" type="checkbox" class="inline" id="#survey-form" value="Learning another lang" > Learning another lang</label>
+    <label class="textanswers"><input name="nextup[]" type="checkbox" class="inline" id="#survey-form" value="Take a break" > Take a break</label>
+    <hr>
+    <label>Please feel free to drop a message or a suggestion</label>
+    <textarea name="message" id="textAreas" cols="30" rows="10"></textarea>
+  </fieldset>
+</div>
+<div class="submit">
+<input type="submit" value="Submit" name="submit" id="submit">
+</div>
+</form>
+  
+</body>
+</html>

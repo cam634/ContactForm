@@ -1,0 +1,95 @@
+body{
+    background-image: url(rockmountain.jpg);
+    color: white;
+    }
+    h1 , p{
+      text-align: center;
+    }
+    #description{
+      font-style: italic;
+      opacity: 60%;
+      padding: auto;
+      
+    }
+    label{
+      display:block;
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+    fieldset {
+      border: none;
+        padding: 2rem 0;
+    }
+    form {
+      background:rgba(0, 179, 255, 0.8);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      max-width: 500px;
+      display: block;
+      border-radius: 20px;
+    }
+    .intros{
+      
+    }
+    
+    input:not[name="submit"]{
+    width: 100%;
+    color:blue;
+    }
+    ::placeholder {
+      color: rgba(82, 97, 103, 0.4);
+    }
+    .inline{
+      width: unset;
+      margin: 0 0.5em 0 0;
+      vertical-align: middle;
+      
+    }
+    .textanswers{
+      font-family: Geneva;
+      align-items: center;
+    }
+    
+    textarea{
+      min-height: 120px;
+      width: 95%;
+      padding: 0.625rem;
+      resize: vertical;
+      display: inline-block;
+      word-wrap: break-word;
+      resize: none;
+    }
+    select, input:not(.inline):not(.submit){
+      display: block;
+      width: 95%;
+      margin: auto;
+      padding: 12px;
+      box-sizing:border-box;
+      border-radius: 12px;
+      border:none;
+    
+    }
+    
+    
+    #submit{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 30%;
+      background-color: orange;
+      color: white;
+    }
+    .submit{
+      margin: -25px 0 0 -25px;
+      
+    }
+    .textquestion{
+      font-family: Geneva;
+      text-align: left;
+      padding-top: 5px;
+    }
+    hr{
+      padding-top: 10px;
+      padding-bottom: 5px;
+      border: none;
+    }
